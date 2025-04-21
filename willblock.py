@@ -25,7 +25,11 @@ player = vlc.MediaPlayer("music.mp3")
 # == Load Model ==
 model = models.resnet18()
 model.fc = torch.nn.Linear(model.fc.in_features, 2)  # Rebuild classifier
-model.load_state_dict(torch.load("best_model.pth"))
+if torch.cuda.is_available():
+    model.load_state_dict(torch.load("best_model.pth"))
+else:
+    model.load_state_dict(torch.load("best_model.pth", map_location=torch.device('cpu')))
+    
 model.eval()
 transform = transforms.Compose([
     transforms.Resize((224, 224)),  # Resize to match model's input size
