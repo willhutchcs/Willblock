@@ -16,7 +16,7 @@ To run on your own machine you need the following packages:
 ```
 
 This program is designed to capture Firefox. If you want to use another broswer/application you can manually change it in the script.
-*If you're using a web browser, you have to disable Hardware Acceleration.*
+*If you're using a web browser to watch the broadcast, you have to disable Hardware Acceleration for the overlay to work.*
 
 By default, the hotkey to disable the real-time detection is ```esc``` and you can turn it back on with ```q```.
 
