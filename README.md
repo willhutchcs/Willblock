@@ -19,9 +19,3 @@ This program is designed to capture Firefox. If you want to use another broswer/
 By default, the hotkey to disable the real-time detection is ```esc``` and you can turn it back on with ```q```.
 
 The program will utilize CUDA cores if available and use CPU cores if not.
-
-    
-## Authors
-
-- Me and ChatGPT :)
-
